@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
+</head>
+<body>
+   <section class="subHeader">
+       <nav>
+           <a href="index.html"><img src="./images/logo2.png" alt=""></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                   <li><a href="index.html">HOME &nbsp;</a></li>
+                   <li><a href="about.html">ABOUT &nbsp;</a></li>
+                   <li><a href="course.html">COURSE &nbsp;</a></li>
+                   <li><a href="blog.html">BLOG &nbsp;</a></li>
+                   <li><a href="contact.html">CONTACT &nbsp;</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>Blog</h1>
+   </section> 
+
+   <!-- Blog -->
+   <section class="blog">
+       <div class="row">
+           <div class="blogLeft">
+               <img src="./images/sunset.jpg" alt="">
+               <i class="fas fa-award"></i>
+               <h2>Achievements</h2>
+               <i class="fas fa-award" id="award"></i>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro odio quidem dignissimos iure nemo id odit error atque quae? Illum animi quaerat veritatis totam alias. Aspernatur soluta explicabo rerum!</p>
+               <br>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi perspiciatis unde sit porro quos praesentium inventore ipsa sint ullam amet earum suscipit, repellat dolor aperiam quas eum? Pariatur tempore neque tenetur corporis, provident cupiditate non perferendis a ex eveniet iste?</p>
+               <br>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nostrum deleniti, ipsam impedit suscipit ducimus incidunt neque illo nam, necessitatibus at eos fugiat in laboriosam, totam id iste architecto nihil doloremque quaerat recusandae blanditiis eum.</p>
+
+               <div class="comment">
+                   <h3>Leave a comment</h3>
+
+                   <form action="" class="commentForm">
+                       <input type="text" placeholder="Enter Name">
+                       <input type="email" placeholder="Enter Email">
+                       <textarea rows="10">Enter text here...</textarea>
+                       <button type="submit" class="heroBTN redBTN">POST COMMENT</button>
+                   </form>
+               </div>
+           </div>
+           <div class="blogRight">
+               <h3>Personal Interests</h3>
+               <div>
+                   <span>Computer Science</span>
+                   <span><i class="fas fa-desktop"></i></span>
+               </div>
+               <div>
+                   <span>Travel</span>
+                   <span><i class="fas fa-plane"></i></span>
+               </div>
+               <div>
+                   <span>Video Games</span>
+                   <span><i class="fas fa-gamepad"></i></span>
+               </div>
+                <div>
+                   <span>Music</span>
+                   <span><i class="fas fa-headphones"></i></span>
+               </div>
+                <div>
+                   <span>Dogs</span>
+                   <span><i class="fas fa-paw"></i></span>
+               </div>
+                 <div>
+                   <span>Basketball</span>
+                   <span><i class="fas fa-basketball-ball"></i></span>
+               </div>
+                <div>
+                    <span>Food</span>
+                    <span><i class="fas fa-pizza-slice"></i></span>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <section class="footer">
+       <h3>Footer</h3>
+       <p>I don't know how to create a footer XD<br> Does this look legit? <br> Contact Us : <br> mihirkpatel9702@gmail.com <br> or <br>+1 (267) - 250 - 3505</p>
+
+       <div class="icons">
+           <i class="fa fa-facebook" aria-hidden="true"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-instagram" aria-hidden="true"></i>
+           <i class="fa fa-linkedin" aria-hidden="true"></i>
+       </div>
+
+       <div class="footerMessage">
+           <p>Copyright © 2021 | Future Tech | Designed by Mihir Patel</p>
+       </div>
+   </section>
+
+   <!-- Javascript for Toggle Menu -->
+   <script>
+       var navLinks = document.getElementById("navLinks");
+
+       function showMenu() {
+           navLinks.style.right = "0px";
+       }
+       function hideMenu() {
+           navLinks.style.right = "-200px";
+       }
+   </script>
+</body>
+</html>

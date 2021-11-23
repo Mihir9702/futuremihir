@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Mihir</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./images/logo2.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME &nbsp;</a></li>
+                    <li><a href="about.html">ABOUT &nbsp;</a></li>
+                    <li><a href="course.html">COURSE &nbsp;</a></li>
+                    <li><a href="blog.html">BLOG &nbsp;</a></li>
+                    <li><a href="contact.html">CONTACT &nbsp;</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Imagination is Innovation</h1>
+            <p>This website is a personal project for the sole purpose of learning and improving my skillset!<br>Have
+                any suggestions? Feel free to submit a form!</p>
+            <a href="blog.html" class="heroBTN">Click to learn more!</a>
+        </div>
+    </section>
+
+    <!-- Languages -->
+  
+      <section class="languages">
+        <h1>Programming Languages</h1>
+        <p>Ordered from most interested/time invested to least</p>
+
+        <div class="row">
+            <div class="languagesCol" id="html" onclick="html()">
+                <h3>HTML/CSS/Javascript</h3>
+                <p>Currently working to improve my web development skills to hopefully land a
+                   future job regarding web designing. My pet project
+                   is in fact this website you are looking at right now! I am constantly learning ways to improve on
+                   this site. </p>
+                <i class="fa fa-angle-down" id="downArrowHTML"></i>
+                <i class="fa fa-angle-up" id="upArrowHTML"></i>
+            </div>
+
+            <div class="languagesCol" id="py" onclick="py()">
+                <h3>Python</h3>
+                <p>When I first started learning to code, I was intrigued with Python. With its easy-to-pickup syntax
+                   and the infamous module called pygame, I was able to learn the fundamentals and even get a little
+                   in-depth with object-orientated programming!</p>
+                <i class="fa fa-angle-down" id="downArrowPy"></i>
+                <i class="fa fa-angle-up" id="upArrowPy"></i>
+            </div>
+
+            <div class="languagesCol" id="c" onclick="c()">
+                <h3>C/C++</h3>
+                <p>CS50, a great online self paced class with a great introductory to the language C. I have spent some time learning the
+                   basics but am not comfortable as of yet in the language. It is a future
+                   goal to learn C and C++ and I look forward to it </p> <br>
+                <i class="fa fa-angle-down" id="downArrowC"></i>
+                <i class="fa fa-angle-up" id="upArrowC"></i>
+            </div>
+        </div>
+
+        <!-- Python Projects -->
+        <h1 id="pyTitle">Python Projects</h1>
+        <p id="pyDesc">Lorem ipsum dolor sit amet.</p>
+
+        <div class="row" id="pyProjects">
+            <div class="projects-col">
+                <img src="./images/flappyBird.JPG" alt="">
+                <div class="layer">
+                    <h3>Flappy Bird</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/snake.JPG" alt="">
+                <div class="layer">
+                    <h3>Snake</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/spaceInvaders.JPG" alt="">
+                <div class="layer">
+                    <h3>Space Invaders</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- C/C++ Projects -->
+        <h1 id="cTitle">C/C++ Projects</h1>
+        <p id="cDesc">Lorem ipsum dolor sit amet.</p>
+
+        <div class="row" id="cProjects">
+            <div class="projects-col">
+                <img src="./images/marioC.JPG" alt="">
+                <div class="layer">
+                    <h3>Mario Pyramid CS50</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/development.png" alt="">
+                <div class="layer">
+                    <h3>Currently in Development</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/development.png" alt="">
+                <div class="layer">
+                    <h3>Currently in Development</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <p>real life people with real life problems recieving real life solutions</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="./images/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore laboriosam provident temporibus
+                        fugit beatae earum, illo, eos consectetur magni mollitia accusamus sequi maiores reprehenderit
+                        placeat!</p>
+                    <h3>Person 1</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="./images/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore laboriosam provident temporibus
+                        fugit beatae earum, illo, eos consectetur magni mollitia accusamus sequi maiores reprehenderit
+                        placeat!</p>
+                    <h3>Person 2</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h1>Get Started Today!</h1>
+        <a href="contact.html" class="heroBTN">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h3>Footer</h3>
+        <p>I don't know how to create a footer XD<br> Does this look legit? <br> Contact Us : <br>
+            mihirkpatel9702@gmail.com <br> or <br>+1 (267) - 250 - 3505</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+
+        <div class="footerMessage">
+            <p>Copyright © 2021 | Future Tech | Designed by Mihir Patel</p>
+        </div>
+    </section>
+
+</body>
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0px";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- Javascript for Python Projects Display -->
+<script>
+    var pyProjects = document.getElementById("pyProjects");
+    var pyDownArrow = document.getElementById("downArrowPy");
+    var pyUpArrow = document.getElementById("upArrowPy");
+    var pyTitle = document.getElementById("pyTitle");
+    var pyDesc = document.getElementById("pyDesc");
+    var pyClicks = 0;
+
+    function py() {
+        if (pyClicks == 0) {
+            pyDown();
+            pyClicks++;
+        }
+        else if (pyClicks == 1) {
+            pyUp();
+            pyClicks--;
+        }
+    }
+    function pyDown() {
+        pyTitle.style.display = "block";
+        pyDesc.style.display = "block";
+        pyProjects.style.display = "flex";
+        pyDownArrow.style.display = "none";
+        pyUpArrow.style.display = "block";
+        pyProjects.classList.add("removeC");
+    }
+    function pyUp() {
+        pyTitle.style.display = "none";
+        pyDesc.style.display = "none";
+        pyProjects.style.display = "flex";
+        pyProjects.style.display = "none";
+        pyDownArrow.style.display = "block";
+        pyUpArrow.style.display = "none";
+    }
+</script>
+
+<!-- Javascript for HTML/CSS Projects Display -->
+<script>
+    var htmlProjects = document.getElementById("htmlProjects");
+    var htmlDownArrow = document.getElementById("downArrowHTML");
+    var htmlUpArrow = document.getElementById("upArrowHTML");
+    var htmlTitle = document.getElementById("htmlTitle");
+    var htmlDesc = document.getElementById("htmlDesc");
+    var htmlClicks = 0;
+
+    function html() {
+        if (htmlClicks == 0) {
+            htmlDown();
+            htmlClicks++;
+        }
+        else if (htmlClicks == 1) {
+            htmlUp();
+            htmlClicks--;
+        }
+    }
+    function htmlDown() {
+        htmlTitle.style.display = "block";
+        htmlDesc.style.display = "block";
+        htmlProjects.style.display = "flex";
+        htmlDownArrow.style.display = "none";
+        htmlUpArrow.style.display = "block";
+    }
+    function htmlUp() {
+        htmlTitle.style.display = "none";
+        htmlDesc.style.display = "none";
+        htmlProjects.style.display = "flex";
+        htmlProjects.style.display = "none";
+        htmlDownArrow.style.display = "block";
+        htmlUpArrow.style.display = "none";
+    }
+</script>
+
+<!-- Javascript for C/C++ Projects Display -->
+<script>
+    var cProjects = document.getElementById("cProjects");
+    var cDownArrow = document.getElementById("downArrowC");
+    var cUpArrow = document.getElementById("upArrowC");
+    var cTitle = document.getElementById("cTitle");
+    var cDesc = document.getElementById("cDesc");
+    var cClicks = 0;
+
+    function c() {
+        if (cClicks == 0) {
+            cDown();
+            cClicks++;
+        }
+        else if (cClicks == 1) {
+            cUp();
+            cClicks--;
+        }
+    }
+    function cDown() {
+        cTitle.style.display = "block";
+        cDesc.style.display = "block";
+        cProjects.style.display = "flex";
+        cDownArrow.style.display = "none";
+        cUpArrow.style.display = "block";
+    }
+    function cUp() {
+        cTitle.style.display = "none";
+        cDesc.style.display = "none";
+        cProjects.style.display = "flex";
+        cProjects.style.display = "none";
+        cDownArrow.style.display = "block";
+        cUpArrow.style.display = "none";
+    }
+</script>
+
+</html>
