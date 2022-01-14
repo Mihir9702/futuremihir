@@ -19,17 +19,21 @@
 </head>
 
 <body>
+
     <section class="header">
         <nav>
-            <a href="index.html"><img src="./images/logo2.png" alt=""></a>
+            <section class="section">
+                <div class="earth"><img src="./images/logo2.png" alt=""></div>
+            </section>
+
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME &nbsp;</a></li>
-                    <li><a href="about.html">ABOUT &nbsp;</a></li>
-                    <li><a href="course.html">COURSE &nbsp;</a></li>
-                    <li><a href="blog.html">BLOG &nbsp;</a></li>
-                    <li><a href="contact.html">CONTACT &nbsp;</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -39,13 +43,16 @@
             <h1>Imagination is Innovation</h1>
             <p>This website is a personal project for the sole purpose of learning and improving my skillset!<br>Have
                 any suggestions? Feel free to submit a form!</p>
-            <a href="blog.html" class="heroBTN">Click to learn more!</a>
-        </div>
-    </section>
-
+                <a href="blog.html" class="heroBTN">Click to learn more!</a>
+            </div>
+            <div id="upArrowBTN" class="upArrowBTN">
+                <button onclick="scrollWin()" class="btnToTop" style="position:fixed"><i class="fa fa-arrow-up"></i></button>
+            </div>
+        </section>
+    
     <!-- Languages -->
-  
-      <section class="languages">
+    
+    <section class="languages">
         <h1>Programming Languages</h1>
         <p>Ordered from most interested/time invested to least</p>
 
@@ -79,9 +86,34 @@
             </div>
         </div>
 
+        <!-- HTML/CSS Projects -->
+        <h1 id="htmlTitle">Web Projects</h1>
+        <p id="htmlDesc">more projects to come!</p>
+
+        <div class="row" id="htmlProjects">
+            <div class="projects-col">
+                <img src="./images/rpc.JPG" alt="">
+                <div class="layer">
+                    <h3>Rock-Paper-Scissors</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/futuremihir.JPG" alt="">
+                <div class="layer">
+                    <h3>Personal Website</h3>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="./images/ironHacklab.JPG" alt="">
+                <div class="layer">
+                    <h3>IronHack Lab</h3>
+                </div>
+            </div>
+        </div>
+
         <!-- Python Projects -->
         <h1 id="pyTitle">Python Projects</h1>
-        <p id="pyDesc">Lorem ipsum dolor sit amet.</p>
+        <p id="pyDesc">pygame projects</p>
 
         <div class="row" id="pyProjects">
             <div class="projects-col">
@@ -106,7 +138,7 @@
 
         <!-- C/C++ Projects -->
         <h1 id="cTitle">C/C++ Projects</h1>
-        <p id="cDesc">Lorem ipsum dolor sit amet.</p>
+        <p id="cDesc">have not done much but look forward to in the future</p>
 
         <div class="row" id="cProjects">
             <div class="projects-col">
@@ -144,11 +176,11 @@
                         fugit beatae earum, illo, eos consectetur magni mollitia accusamus sequi maiores reprehenderit
                         placeat!</p>
                     <h3>Person 1</h3>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                 </div>
             </div>
             <div class="testimonial-col">
@@ -158,20 +190,25 @@
                         fugit beatae earum, illo, eos consectetur magni mollitia accusamus sequi maiores reprehenderit
                         placeat!</p>
                     <h3>Person 2</h3>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
                 </div>
-            </div>
-        </div>
 
     </section>
+ </div>
 
-    <!-- Call to Action -->
-    <section class="cta">
+ <div class="commentSection">
+    <p></p>
+    <a href="comment.html" id="comment">View Comments &nbsp; &nbsp; -></a>
+    <p></p>
+ </div>
+<!-- <i class="fa fa-arrow-circle-up"></i> -->
+<!-- SCROLL TO TOP BUTTON -->
+<!-- Call to Action -->
+<section class="cta">
         <h1>Get Started Today!</h1>
         <a href="contact.html" class="heroBTN">CONTACT US</a>
     </section>
@@ -315,6 +352,32 @@
         cDownArrow.style.display = "block";
         cUpArrow.style.display = "none";
     }
+</script>
+
+<!-- Scroll Up Button -->
+<script>
+
+    let scrolled = false;
+    const scrollUP = document.getElementById("upArrowBTN");
+
+    if (!scrolled) {
+        scrollUP.style.display = "none";
+    }
+    window.onscroll = () => scrolled = true; 
+    setInterval(() => {
+        if (scrolled) {
+            scrollUP.style.display = "flex";
+            scrolled = false;
+            }
+    }, 250);
+    function scrollWin() {
+        window.scroll( {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
 </script>
 
 </html>

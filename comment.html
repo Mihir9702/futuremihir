@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureMihir's Comments</title>
+    <link rel="stylesheet" href="comment.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" class="form">
+        <div class="inputGroup">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+        </div>
+
+        <!-- Comment Section Star Ratings -->
+        <!-- <div class="rating">
+            <input type="radio" name="star" id="star1" required><label for="star1"></label>
+            <input type="radio" name="star" id="star2" required><label for="star2"></label>
+            <input type="radio" name="star" id="star3" required><label for="star3"></label>
+            <input type="radio" name="star" id="star4" required><label for="star4"></label>
+            <input type="radio" name="star" id="star5" required><label for="star5"></label>
+        </div> -->
+
+        <div class="inputGroup textarea">
+            <label for="comment">Your Comment: </label>
+            <textarea id="comment" placeholder="Write your comment here..." cols="30" rows="10" requried></textarea>
+        </div>
+        </form>
+        <div class="prevComments">
+            <div class="singleItem">
+                <h4>Mihir</h4>
+                <p>Work in Progress...</p>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+    <a class="goBack" href="index.html">Go Back ⬅ </a>
+
+</body>
+
+ <!-- Scroll Up Button -->
+<script>
+
+    let scrolled = false;
+    const scrollUP = document.getElementById("upArrowBTN");
+
+    if (!scrolled) {
+        scrollUP.style.display = "none";
+    }
+    window.onscroll = () => scrolled = true; 
+    setInterval(() => {
+        if (scrolled) {
+            scrollUP.style.display = "flex";
+            scrolled = false;
+            }
+    }, 250);
+    function scrollWin() {
+        window.scroll( {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>

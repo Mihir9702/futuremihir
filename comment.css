@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #00b894;
+}
+
+.wrapper {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  min-height: 400px;
+}
+
+.wrapper .form .inputGroup {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.wrapper .form .inputGroup label {
+  font-weight: 800;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.wrapper .form .inputGroup input,
+.wrapper .form .inputGroup textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00b894;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.wrapper .form .inputGroup textarea {
+  resize: none;
+  height: 200px;
+}
+
+.wrapper .prevComments .singleItem {
+  margin-top: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  text-align: left;
+}
+.wrapper .prevComments .singleItem h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+}
+.wrapper .prevComments .singleItem p {
+  font-size: 0.9rem;
+  color: #111;
+}
+
+/* Go back ? */
+.goBack {
+  text-decoration: none;
+  color: black;
+}
+.goBack:hover {
+  text-decoration: underline;
+}

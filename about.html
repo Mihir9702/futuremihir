@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Design</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="side.css">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
     </style>
@@ -16,15 +16,17 @@
 <body>
    <section class="subHeader">
        <nav>
-           <a href="index.html"><img src="./images/logo2.png" alt=""></a>
+            <section class="section">
+                <div class="earth"><img src="./images/logo2.png" alt=""></div>
+            </section>
            <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
                <ul>
-                   <li><a href="index.html">HOME &nbsp;</a></li>
-                   <li><a href="about.html">ABOUT &nbsp;</a></li>
-                   <li><a href="course.html">COURSE &nbsp;</a></li>
-                   <li><a href="blog.html">BLOG &nbsp;</a></li>
-                   <li><a href="contact.html">CONTACT &nbsp;</a></li>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
                </ul>
            </div>
            <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -44,12 +46,14 @@
                <img src="./images/about.jpg" alt="">
            </div>
        </div>
+       <button onclick="scrollWin()" class="btnToTop" style="position:fixed"><i class="fa fa-arrow-up"></i></button>
    </section>
 
    <!-- Footer -->
    <section class="footer">
        <h3>Footer</h3>
-       <p>I don't know how to create a footer XD<br> Does this look legit? <br> Contact Us : <br> mihirkpatel9702@gmail.com <br> or <br>+1 (267) - 250 - 3505</p>
+        <!-- mihirkpatel9702@gmail.com <br> or <br>+1 (267) - 250 - 3505 -->
+       <p>I don't know how to create a footer XD<br> Does this look legit? <br> Contact Us : <br> </p>
 
        <div class="icons">
            <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -73,6 +77,34 @@
        function hideMenu() {
            navLinks.style.right = "-200px";
        }
-   </script>
+</script>
+
+  
 </body>
+
+ <!-- Scroll Up Button -->
+<script>
+
+    let scrolled = false;
+    const scrollUP = document.getElementById("upArrowBTN");
+
+    if (!scrolled) {
+        scrollUP.style.display = "none";
+    }
+    window.onscroll = () => scrolled = true; 
+    setInterval(() => {
+        if (scrolled) {
+            scrollUP.style.display = "flex";
+            scrolled = false;
+            }
+    }, 250);
+    function scrollWin() {
+        window.scroll( {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
 </html>
